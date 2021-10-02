@@ -1,0 +1,6 @@
+[submodule "alpha-blog"]
+	path = alpha-blog
+	url = https://github.com/Andrey606/alpha-blog.git
+[submodule "udemy/ruby_on_rails/alpha-blog"]
+	path = udemy/ruby_on_rails/alpha-blog
+	url = https://github.com/Andrey606/alpha-blog.git
