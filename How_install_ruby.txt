@@ -1,0 +1,7 @@
+download: https://www.ruby-lang.org/ru/downloads/
+
+$ ./configure
+$ make
+$ sudo make install
+
+$ 

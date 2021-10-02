@@ -1,0 +1,73 @@
+rails commands 
+
+# create new
+rails new <project_name>
+
+# controller generator
+rails generate controller <name>
+
+# CRUD generator
+rails generate scaffold Article title:string description:text
+
+# check routes 
+rails routes --expanded
+
+# migration file generator
+rails generate migration create_articles
+rails db:migrate
+rails db:rollback
+
+# rails console
+rails console
+
+# db is conected?
+<db_name>.all
+
+# clean irb
+ctrl+l
+
+# create new column in db
+<ModelName>.create(title: "qwe", description: "sds")
+
+# read column with id
+<ModelName>.find(2)
+<ModelName>.first
+<ModelName>.last
+<ModelName>.all
+
+# (edit)save into db
+<variable> = <ModelName>.find(2)
+<variable>.title = "edited title"
+<variable>.save
+
+# delete row in db
+<variable> = <ModelName>.last
+<variable>.destroy
+
+# reload irb (needs after modifiing a model)
+reload!
+
+# check db errors
+article.errors
+article.errors.full_messages
+
+# to run debug
+write 'byebug' into the code and then type 'continue' to continue
+
+# if i have any changes in gem file (before production)
+bundle install --without production
+
+# add bootstarap 4.4 into rails6
+1) yarn add bootstrap@4.4.1 jquery popper.js
+2) add "*= require bootstrap" into application.css
+3) add:
+const webpack = require('webpack')
+
+environment.plugins.append("Provide", new webpack.ProvidePlugin({
+  $: 'jquery',
+  jQuery: 'jquery',
+  Popper: ['popper.js', 'default']
+}))
+into environment.js
+
+4) add 'import "bootstrap"' into aplication.js

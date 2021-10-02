@@ -1,0 +1,8 @@
+about ruby
+
+RVM - ruby version manager
+irb - interactive rybu - шняга чтобы выполнять команды в консоли
+
+ctrl+/ = comment and uncomment
+
+popular hashink algoritm (for password on example) is MD5 - bcrypt # https://github.com/bcrypt-ruby/bcrypt-ruby
