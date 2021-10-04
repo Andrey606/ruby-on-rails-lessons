@@ -1,6 +1,6 @@
 about ruby
 
-RVM - ruby version manager
+RVM - ruby version manager (https://github.com/rvm/ubuntu_rvm)
 irb - interactive rybu - шняга чтобы выполнять команды в консоли
 
 ctrl+/ = comment and uncomment
