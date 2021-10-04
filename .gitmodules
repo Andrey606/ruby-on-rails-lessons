@@ -4,3 +4,6 @@
 [submodule "udemy/ruby_on_rails/alpha-blog"]
 	path = udemy/ruby_on_rails/alpha-blog
 	url = https://github.com/Andrey606/alpha-blog.git
+[submodule "udemy/ruby_on_rails/test_app_6"]
+	path = udemy/ruby_on_rails/test_app_6
+	url = https://github.com/Andrey606/test_app_6.git
