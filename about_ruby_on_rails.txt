@@ -98,3 +98,6 @@ user.toggle!(:admin)
 1) needs Permisiion table - for system like CRM
 2) have string field in table user
 3) have bool field in user table
+
+#delete all items in table
+User.delete.all
