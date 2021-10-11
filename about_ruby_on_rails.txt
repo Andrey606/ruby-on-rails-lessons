@@ -86,3 +86,15 @@ into environment.js
 
 # display info messages
 flash[:notice] = "Article was updated succesfuly."
+
+# если в таблице значение bool, то можно так проверять
+User.admin?
+
+# а также можно менять значение поля таблици
+user = User.first
+user.toggle!(:admin)
+
+# Permisiion table
+1) needs Permisiion table - for system like CRM
+2) have string field in table user
+3) have bool field in user table
