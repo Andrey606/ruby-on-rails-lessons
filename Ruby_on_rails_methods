@@ -1,0 +1,41 @@
+# general:
+1)image_tag(url) - generate html with img
+2)pluralize(user.articles.count, "article")
+
+# validatiol
+1)before_save { self.email = email.downcase } - do smth before saving
+2)has_many :articles
+3)belongs_to :user
+4)validates :title, presence: true, length: {minimum: 6, maximum: 100}
+5)VALID_EMAIL_REGEX = /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i # const
+  validates :email, uniqueness: { case_sensitive: false }, 
+                    presence: true, 
+                    length: { maximum: 105 },
+                    format: { with: VALID_EMAIL_REGEX } 
+
+#controller
+1)before_action :set_article, only: [:show, :edit, :update, :destroy]
+2)render 'new
+3)redirect_to articles_path
+4)flash[:notice] = "Article was updated succesfuly."
+5)flash.now[:notice]
+
+# типо пока не инициализировано current_user то мы дергаем правую сторону и инициализируем а потм будем ток левую
+@current_user ||= User.find(session[:user_id])
+
+# !! - превращает в бул
+!!current_user
+
+# область видимости локальных переменых и методов [viev]-[application_helper]
+# если обьявить какойто метод в базовом класе application_controller то будет видно во всех контролерах
+
+# говорим что current_user метод также видно в application_helper, можно сделать что видно метод и во вюхах через хелпер и в контролеррах через application_controller (обьявляем в application_controller)
+helper_method :current_user
+
+def current_user
+    @current_user ||= User.find(session[:user_id]) if session[:user_id]
+end 
+
+# чтобы хранить сесию нужно использовать обьект ActionDispatch::Request::Session
+session[:user_id] = user.id
+

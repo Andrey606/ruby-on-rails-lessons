@@ -1,0 +1,13 @@
+heroku
+
+heroku login
+
+git push heroku master
+
+heroku run rake db:migrate
+
+heroku open
+
+heroku run rails console
+
+https://en.gravatar.com/ - тут можно аву прикрепить с юрл

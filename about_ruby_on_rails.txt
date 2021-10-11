@@ -11,6 +11,7 @@ rails generate scaffold Article title:string description:text
 
 # check routes 
 rails routes --expanded
+rails routes --expanded | grep edit
 
 # migration file generator
 rails generate migration create_articles
@@ -34,6 +35,15 @@ ctrl+l
 <ModelName>.first
 <ModelName>.last
 <ModelName>.all
+
+User.find(1) # returns the user
+User.find_by_id(1) # returns the user
+User.where(id: 1).first # returns the user
+2) if id=2 dont exsist
+User.find(2) # raises an exception
+User.find_by_id(2) # nil
+User.where(id: 2).first # nil
+User.find_by(id: 1)
 
 # (edit)save into db
 <variable> = <ModelName>.find(2)
@@ -60,7 +70,7 @@ bundle install --without production
 # add bootstarap 4.4 into rails6
 1) yarn add bootstrap@4.4.1 jquery popper.js
 2) add "*= require bootstrap" into application.css
-3) add:
+3) add: 
 const webpack = require('webpack')
 
 environment.plugins.append("Provide", new webpack.ProvidePlugin({
@@ -71,3 +81,8 @@ environment.plugins.append("Provide", new webpack.ProvidePlugin({
 into environment.js
 
 4) add 'import "bootstrap"' into aplication.js
+
+5) app/helper - используется чтобы можно было добавлять вспомагательные функции для использования во view
+
+# display info messages
+flash[:notice] = "Article was updated succesfuly."
