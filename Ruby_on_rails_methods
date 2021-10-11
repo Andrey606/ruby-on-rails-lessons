@@ -39,3 +39,5 @@ end
 # чтобы хранить сесию нужно использовать обьект ActionDispatch::Request::Session
 session[:user_id] = user.id
 
+# provede hashed password in table (used in module class)
+has_secure_password
