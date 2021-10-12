@@ -6,8 +6,11 @@ rails new <project_name>
 # controller generator
 rails generate controller <name>
 
-# CRUD generator
+# CRUD generator (controller view model route)
 rails generate scaffold Article title:string description:text
+
+# CRUD generator (model test)
+rails generate model user
 
 # check routes 
 rails routes --expanded

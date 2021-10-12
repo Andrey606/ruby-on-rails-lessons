@@ -41,3 +41,11 @@ session[:user_id] = user.id
 
 # provede hashed password in table (used in module class)
 has_secure_password
+
+# проверить все ли созданно правильно для сохранения в бд
+@category =  Category.new(name: "Sport")
+@category.valid?
+@category.save
+
+# Returns true if this object hasn’t been saved yet — that is, a record for the object doesn’t exist yet; otherwise, returns false.
+new_record?

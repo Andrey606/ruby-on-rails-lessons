@@ -3,3 +3,5 @@ redirect_to vs render
 
 2) как это работает
 has_secure_password
+
+3) какмодель знает что созданная таблица принадлежит ей category categories

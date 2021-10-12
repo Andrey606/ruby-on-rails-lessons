@@ -1,1 +1,36 @@
 test_types.png
+
+https://guides.rubyonrails.org/testing.html#available-assertions
+
+# file with test
+tests -> model -> category_test.rb
+
+# to run tests (команда запускает все тесты в папке test *кроме system)
+rails test
+
+# to run tests  (команда запускает только controller/categories_controller_test тест)
+rails test test/controllers/categories_controller_test.rb
+
+# if error after rails test
+1. Add the following line to your Gemfile beneath the 'will_paginate' gem:
+gem 'rexml', require: false
+
+#  при тестировании используется другая база данных для тестов
+
+# test firsr development
+1) сначала пишешьтест и когда он не проходит начинаешь писать минимум кода чтобы тесты прошли
+
+# метод который запускается перед всеми тестами
+def setup
+end
+
+# Типы тесто
+1) юнит - для моделей, там мы пишем тесты ля модели
+2) функциональный там мы должны проверить каждый метод контроллера
+
+# сгенер ировать тест для контролера (categories_controller_test.rb)
+rails generate test_unit:scaffold category
+
+
+# сгенер ировать интегрейшн тест (create_category_test.rb)
+rails generate integration_test create_category
