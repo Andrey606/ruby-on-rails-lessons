@@ -27,6 +27,7 @@ end
 # Типы тесто
 1) юнит - для моделей, там мы пишем тесты ля модели
 2) функциональный там мы должны проверить каждый метод контроллера
+3) integration
 
 # сгенер ировать тест для контролера (categories_controller_test.rb)
 rails generate test_unit:scaffold category
