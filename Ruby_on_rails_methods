@@ -1,3 +1,5 @@
+RAILS 6
+
 # general:
 1)image_tag(url) - generate html with img
 2)pluralize(user.articles.count, "article")
@@ -49,3 +51,15 @@ has_secure_password
 
 # Returns true if this object hasn’t been saved yet — that is, a record for the object doesn’t exist yet; otherwise, returns false.
 new_record?
+
+# many to many (article <-> article_categories <-> category)
+article.categories
+category.articles
+category.articles << article
+category.articles.count
+article.categories << Category.first
+article = Article.new(title: "some title", description: "some description", user: User.last, category_ids: [10,11])
+ArticleCategory.all
+
+# перебрать все елементы и отобразить _ПАРШАЛ для каждого елемента
+<%= render @article.categories %> # имя обрабатавыямого обьекта - category

@@ -4,4 +4,8 @@ $ ./configure
 $ make
 $ sudo make install
 
-$ 
+
+
+rvm use --default 2.5.1
+rvm use 3.0.2
+rvm list

@@ -1,7 +1,13 @@
+RAILS 6
+
 rails commands 
 
 # create new
 rails new <project_name>
+
+# create new с версией рельсов
+rails _5.2.4.1_ new test_app_5
+
 
 # controller generator
 rails generate controller <name>

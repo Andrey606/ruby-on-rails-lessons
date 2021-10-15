@@ -6,3 +6,15 @@ irb - interactive rybu - шняга чтобы выполнять команды
 ctrl+/ = comment and uncomment
 
 popular hashink algoritm (for password on example) is MD5 - bcrypt # https://github.com/bcrypt-ruby/bcrypt-ruby
+
+
+# проверить список руби
+rvm list rubies
+
+# доступные руби версиии
+rvm list known
+
+rvm install ruby-2.6.3
+
+
+rvm --default use 2.6.3

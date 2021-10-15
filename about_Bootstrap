@@ -1,0 +1,10 @@
+Bootstrap "4.4.1"
+
+# margin-top
+class="mt-2" 
+
+# margin-right
+class="mr-2" 
+
+# badge - кнопка красивая с ссылкой
+<a href="#" class="badge badge-pill badge-primary">Primary</a>

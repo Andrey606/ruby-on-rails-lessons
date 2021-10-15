@@ -2,6 +2,8 @@ heroku
 
 heroku login
 
+git remote -v
+
 git push heroku master
 
 heroku run rake db:migrate
@@ -11,3 +13,9 @@ heroku open
 heroku run rails console
 
 https://en.gravatar.com/ - тут можно аву прикрепить с юрл
+
+
+
+
+
+heroku create
