@@ -19,3 +19,5 @@ https://en.gravatar.com/ - тут можно аву прикрепить с юр
 
 
 heroku create
+
+git push heroku main

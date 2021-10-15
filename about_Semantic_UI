@@ -3,3 +3,16 @@ https://semantic-ui.com/
 
 Semantic is a development framework that helps create beautiful, responsive layouts using human-friendly HTML.
 
+https://github.com/doabit/semantic-ui-sass
+gem 'semantic-ui-sass'
+
+# add to rails5
+1) add to gem file "gem 'semantic-ui-sass'"
+2) it needs jquery so add in gemfile "gem 'jquery-rails'"
+3) bundle install
+4) create file app/assets/stylesheet/custom.css.scss and add "@import 'semantic-ui';"
+5) добавить:
+// Loads all Semantic javascripts
+//= require jquery
+//= require semantic-ui
+в app/assets/javascript/application.js

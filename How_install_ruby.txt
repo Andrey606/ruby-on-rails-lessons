@@ -5,6 +5,7 @@ $ make
 $ sudo make install
 
 
+rvm install "ruby-2.3.4"
 
 rvm use --default 2.5.1
 rvm use 3.0.2

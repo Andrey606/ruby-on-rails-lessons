@@ -1,5 +1,25 @@
 Bootstrap "4.4.1"
 
+the world’s most popular front-end open source toolkit,
+
+# add bootstarap 4.4 into rails6
+1) yarn add bootstrap@4.4.1 jquery popper.js
+2) add "*= require bootstrap" into application.css
+3) add: 
+const webpack = require('webpack')
+
+environment.plugins.append("Provide", new webpack.ProvidePlugin({
+  $: 'jquery',
+  jQuery: 'jquery',
+  Popper: ['popper.js', 'default']
+}))
+into environment.js
+
+4) add 'import "bootstrap"' into aplication.js
+
+5) app/helper - используется чтобы можно было добавлять вспомагательные функции для использования во view
+
+
 # margin-top
 class="mt-2" 
 
