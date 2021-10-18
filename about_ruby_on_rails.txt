@@ -12,6 +12,10 @@ rails _5.2.4.1_ new test_app_5
 # controller generator
 rails generate controller <name>
 
+rails destroy controller <name>
+
+rails generate channel  chatroom
+
 # CRUD generator (controller view model route)
 rails generate scaffold Article title:string description:text
 
@@ -26,6 +30,7 @@ rails routes --expanded | grep edit
 rails generate migration create_articles
 rails db:migrate
 rails db:rollback
+rails db:seed
 
 # rails console
 rails console
@@ -110,3 +115,8 @@ user.toggle!(:admin)
 
 #delete all items in table
 User.delete.all
+
+
+# pretty otput of db in console
+gem 'hirb'
+Hirb.enable
