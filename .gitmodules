@@ -13,3 +13,6 @@
 [submodule "udemy/ruby_on_rails_6/alpha-blog"]
 	path = udemy/ruby_on_rails_6/alpha-blog
 	url = https://github.com/Andrey606/alpha-blog.git
+[submodule "udemy/ruby_on_rails_6/finance-tracker"]
+	path = udemy/ruby_on_rails_6/finance-tracker
+	url = https://github.com/Andrey606/finance-tracker.git
