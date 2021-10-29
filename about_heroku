@@ -24,3 +24,7 @@ git push heroku main
 
 
 heroku stack:set heroku-18
+
+
+передать мастер кей в хероку
+heroku config:set RAILS_MASTER_KEY=e432ef15e96379812c6302778858d4b5

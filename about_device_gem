@@ -1,0 +1,32 @@
+Device gem
+
+https://github.com/heartcombo/devise
+
+# add devise gem for authentify
+1) add gem to gemfile
+gem 'devise'
+2) bundle install --without production
+3) rails generate devise:install
+
+# generate user model
+rails generate devise User
+rails db:migrate
+
+# можно в контролер добавлять теперь
+before_action :authenticate_user!
+и эта шняга сама генерит  форму для логина и не будет открывать ни одной страници из этого контролера пока не залогинится
+
+# добавить подсказки  и ошибки
+добавить это в aplication.html.erb
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+
+# по дефолту штмл сгенерених страниц скрыт в геме но можно кастомизировать
+
+
+# devise-bootstarp 
+https://github.com/hisea/devise-bootstrap-views
+# чтобы добавить бутстрап и мочь менять стиль страницм сгенереный от девайса
+1) добавь гем gem 'devise-bootstrap-views', '~> 1.0'
+2) сгенери вью rails generate devise:views:bootstrap_templates
+3) bundle install

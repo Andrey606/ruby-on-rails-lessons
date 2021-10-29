@@ -1,0 +1,15 @@
+about ajax
+
+to enable ajax request in the form you need to wride "remote=true"
+<%= form_tag search_stock_path, remote: true, method: :get do %>
+
+при этом запрос будет отправляться на контролер
+но в него нужно добавить
+
+respond_to do |format|
+  format.js { render partial: 'users/result'}
+end
+
+а также во вью создать новый паршал result.js.erb
+
+этот жс будет модифицировать страницу без перезагрузки

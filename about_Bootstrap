@@ -28,3 +28,12 @@ class="mr-2"
 
 # badge - кнопка красивая с ссылкой
 <a href="#" class="badge badge-pill badge-primary">Primary</a>
+
+# контейнер выравнивает все по центру
+<div class="container">
+
+# создаем контейнер который занимает 9 столбцов
+<div class="container">
+  <div class="row">
+    <div class="col-9">
+    

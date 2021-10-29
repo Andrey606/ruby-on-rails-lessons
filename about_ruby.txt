@@ -18,3 +18,13 @@ rvm install ruby-2.6.3
 
 
 rvm --default use 2.6.3
+
+
+# self значит static
+class Stock < ApplicationRecord
+
+  def self.new_lookup
+
+  end
+
+end

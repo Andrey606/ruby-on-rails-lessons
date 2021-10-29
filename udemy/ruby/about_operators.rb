@@ -1,0 +1,3 @@
+var = false
+
+var ||= true
