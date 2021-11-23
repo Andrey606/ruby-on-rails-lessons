@@ -164,3 +164,7 @@ kill -9 <PID>
 
 # run rspec test
 bundle exec rspec
+
+# how to generate many-to-many table via cli
+rails g resource UserStock user:referces stock:references
+# will generate: model, controller, controller helper, add route, migration file, test file for controller and model
