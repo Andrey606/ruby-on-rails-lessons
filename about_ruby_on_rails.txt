@@ -168,3 +168,6 @@ bundle exec rspec
 # how to generate many-to-many table via cli
 rails g resource UserStock user:referces stock:references
 # will generate: model, controller, controller helper, add route, migration file, test file for controller and model
+
+# delegate modificator
+delegate :hello, to: :greeter #give access to hello method from greeter class
