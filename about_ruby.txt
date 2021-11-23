@@ -28,3 +28,6 @@ class Stock < ApplicationRecord
   end
 
 end
+
+
+to_sym - to_sym converts a string to a symbol. For example, "a".to_sym becomes :a.

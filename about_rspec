@@ -1,0 +1,11 @@
+about rspec
+
+# start 
+bundle exec rspec
+
+# хелпер методы
+sign_in - находиться RequestSpecHelper модуле
+
+# стандартные метода
+let(:user) { create :user, :system_admin } - иницилизирует парамет перед выполнением тестов, но не понятно что происходит при переходе в другой тест
+let!(:user) { create :user, :system_admin } - делает тоже самое но принудительно(до того как тесты запустяться)

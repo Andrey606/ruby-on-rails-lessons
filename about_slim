@@ -1,0 +1,46 @@
+*) == <ruby code>
+*) #<name> for id tag (<div id="...">)
+*) .<name> for class tag (<div class="...">)
+*) html general
+doctype html
+html
+  head
+    title Slim Examples
+  body
+    h1 Markup examples
+*) ruby if
+- if items.any?
+
+- else
+
+
+*) <%> </%> - '-'
+*) <%=> </%> - '='
+*) <%=> </%> - '==' but without HTML escaping
+
+*) I18n.t('header', scope: localization_scope, company_name: model.name)
+we use it for localisation
+delete_company_modal: // scope
+	header: Are you sure you want to delete %{company_name}? // header
+
+
+*) modal window
+.modal *modal_attributes_hash
+  .modal-dialog.modal-lg role="document"
+    .modal-content data-controller='delete-company'
+		= modal_header I18n.t('header', scope: localization_scope, company_name: model.name)
+		      .modal-body
+		        p = I18n.t('body', scope: localization_scope)
+		        p = I18n.t('confirm', scope: localization_scope)
+		        .row
+		          .col-12
+		            = text_field_tag :company_name,
+		                    nil,
+		                    class: 'form-control',
+		                    id: "#{modal_id}_name",
+		                    'data-delete-company-target': 'deleteName',
+		                    'data-action': 'keyup->delete-company#checkCompanyName',
+		                    'data-name': model.name
+
+
+"/company_lookups/PkTjNv3W?current_company_hashid=7AtOgY"

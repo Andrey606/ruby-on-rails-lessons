@@ -63,3 +63,16 @@ ArticleCategory.all
 
 # перебрать все елементы и отобразить _ПАРШАЛ для каждого елемента
 <%= render @article.categories %> # имя обрабатавыямого обьекта - category
+
+
+underscore - метод трансформирует кемл кейс в снейк кейс
+
+
+# operators %w ...
+1) %w creates an "array of words," and uses whitespace to separate each value. Since you want to separate on another value (in this case, whitespace outside sets of quotation marks), just use a standard array:
+['Upload a photo', 'Billing Info', 'Confirmation Screen']
+
+2) %r() is another way to write a regular expression.
+3) %q() is another way to write a single-quoted string (and can be multi-line, which is useful)
+4) %Q() gives a double-quoted string
+5) %x() is a shell command
