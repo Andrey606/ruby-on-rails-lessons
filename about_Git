@@ -6,3 +6,6 @@ git commit -m "add login and index root"
 git push origin add_login_index_root
 git checkout master
 git merge add_login_index_root
+
+# clone submodules
+git submodule update --init --recursive
