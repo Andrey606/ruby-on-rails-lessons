@@ -144,6 +144,8 @@ render json: <ruby variable>
 
 
 # generate resources many-to-many (controller view model route db migration)
+# Чтобы создать новую модель, соответствующую таблицу базы данных, контроллер и пустую папку 
+# представлений, введите:
 rails g resource UserStock user:references stock:references
 =>
 
