@@ -2,4 +2,16 @@ assocoation
 
 1) one-to-many
 2) many to many (many-to-many-associacion.png)
-3) self reference association
+3) self reference association USER <=> Friendship <=> USER
+rails g model Friendship user:references
+# in migration file
+t.references :friend, references: :users, foreign_key: { to_table: :users}
+# in the friendship model
+belongs_to :friend, class_name: 'User'
+# in the user model
+has_many :friendships
+has_many :friends, through: :friendships
+# in result Friendship model is
+Friendship(id: integer, user_id: integer, friend_id: integer, created_at: datetime, updated_at: datetime)
+# to add new friend
+user1.friends << user2
