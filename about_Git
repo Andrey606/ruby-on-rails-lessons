@@ -9,3 +9,6 @@ git merge add_login_index_root
 
 # clone submodules
 git submodule update --init --recursive
+
+one step back
+git reset --soft HEAD~1
