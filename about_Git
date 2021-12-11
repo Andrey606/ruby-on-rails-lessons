@@ -12,3 +12,7 @@ git submodule update --init --recursive
 
 one step back
 git reset --soft HEAD~1
+
+
+Git squash
+https://www.youtube.com/watch?v=V5KrD7CmO4o&ab_channel=TheModernCoder
