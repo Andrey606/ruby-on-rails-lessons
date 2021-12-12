@@ -16,3 +16,11 @@ git reset --soft HEAD~1
 
 Git squash
 https://www.youtube.com/watch?v=V5KrD7CmO4o&ab_channel=TheModernCoder
+
+add submodule:
+1) IN TERMINAL open place where you want to add and execute next
+2) git submodule add https://github.com/chaconinc/DbConnector
+3) add in submodule
+[submodule "udemy/ruby_on_rails_6/finance-tracker"]
+	path = udemy/ruby_on_rails_6/finance-tracker
+	url = https://github.com/Andrey606/finance-tracker.git

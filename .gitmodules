@@ -7,3 +7,6 @@
 [submodule "udemy/ruby_on_rails_6/finance-tracker"]
 	path = udemy/ruby_on_rails_6/finance-tracker
 	url = https://github.com/Andrey606/finance-tracker.git
+[submodule "udemy/ruby_on_rails_6/photo-app"]
+	path = udemy/ruby_on_rails_6/photo-app
+	url = https://github.com/Andrey606/photo-app.git

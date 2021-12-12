@@ -173,3 +173,7 @@ rails g resource UserStock user:referces stock:references
 
 # delegate modificator
 delegate :hello, to: :greeter #give access to hello method from greeter class
+
+# generate controller welcome and add index for it (also create routes and some test) 
+# route will be "localhost:3000/welcome/index"
+rails g controller welcome index
