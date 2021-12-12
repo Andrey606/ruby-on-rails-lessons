@@ -187,3 +187,6 @@ and then setup fiew files
 # how to embedd html into rails link_to
 <%= link_to ('<i class="fa fa-user"></i> ' + truncate(current_user.email, length: 25)).html_safe,
                   edit_user_registration_path, title: 'Edit profile' %>
+
+# to get config data from heroku
+heroku config:get SENDGRID_USERNAME
