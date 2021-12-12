@@ -30,3 +30,71 @@ https://github.com/hisea/devise-bootstrap-views
 1) добавь гем gem 'devise-bootstrap-views', '~> 1.0'
 2) сгенери вью rails generate devise:views:bootstrap_templates
 3) bundle install
+
+
+
+
+
+
+
+
+
+
+
+# how to create devise
+# to start add to gemfile =================================
+gem 'devise'
+gem 'twitter-bootstrap-rails'
+gem 'devise-bootstrap-views'
+
+# rails g devise:install
+# rails g devise User
+invoke  active_record
+create    db/migrate/20211212135926_devise_create_users.rb
+create    app/models/user.rb
+invoke    test_unit
+create      test/models/user_test.rb
+create      test/fixtures/users.yml
+insert    app/models/user.rb
+route  devise_for :users
+
+# how to add comfortable
+1) uncoment comfortable part in new generated migration file
+2) add to User model ":confirmable"
+3) rails db:migrate
+4) in application controller add 'before_action :authenticate_user!'
+5) add in welcome controller 'skip_before_action :authenticate_user!, only: [:index]' to avoid authenticate_user! in welcome page
+
+# then we cann style this
+1)rails g bootstrap:install static
+create  app/assets/javascripts/application.js
+create  app/assets/javascripts/bootstrap.js
+create  app/assets/stylesheets/bootstrap_and_overrides.css
+create  config/locales/en.bootstrap.yml
+gsub  app/assets/stylesheets/application.css
+2) rails g bootstrap:layout application
+3) rails g devise:views:locale en
+4) rails g devise:views:bootstrap_templates
+create  app/views/devise
+create  app/views/devise/confirmations/new.html.erb
+create  app/views/devise/passwords/edit.html.erb
+create  app/views/devise/passwords/new.html.erb
+create  app/views/devise/registrations/edit.html.erb
+create  app/views/devise/registrations/new.html.erb
+create  app/views/devise/sessions/new.html.erb
+create  app/views/devise/shared/_links.html.erb
+create  app/views/devise/unlocks/new.html.erb
+5) add to gemfile "gem 'jquery-rails'"
+5) delete 5 links in /views/layouts/application.html.erb file  
+6) add folowing in application.js file
+//= require rails-ujs
+//= require activestorage
+//= require turbolinks
+//= require_tree .
+// Loads all Semantic javascripts
+//= require jquery
+//= require semantic-ui
+7) add to manifest.js
+//= link_tree ../images
+//= link_directory ../stylesheets .css
+//= link application.js
