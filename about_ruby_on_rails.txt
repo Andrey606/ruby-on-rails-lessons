@@ -180,3 +180,6 @@ rails g controller welcome index
 
 # sendgrid API key
 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
+
+# to setap confirmation vi email you need to get api gey ftom smtp server(sendgrid)
+and then setup fiew files
