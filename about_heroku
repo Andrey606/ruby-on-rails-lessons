@@ -14,10 +14,9 @@ heroku run rails console
 
 https://en.gravatar.com/ - тут можно аву прикрепить с юрл
 
+heroku apps:rename newname
 
-
-
-
+heroku create andrews-photo-app-6  
 heroku create
 
 git push heroku main

@@ -190,3 +190,10 @@ and then setup fiew files
 
 # to get config data from heroku
 heroku config:get SENDGRID_USERNAME
+
+# virtual property
+It is exists but when we give form object with virtual property it will not be saved in module
+
+# sorting
+# divide on two groups and sort inside each separately
+line_items.sort_by{ |line_item| [line_item.line_type, line_item.id] }.each do |line_item|

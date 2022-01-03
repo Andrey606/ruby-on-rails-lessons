@@ -1,0 +1,28 @@
+### to debug 
+debugger
+
+### to add your own parameter to js controller
+
+.div data-controller="salary--recurring-payslip-line-items--edit"
+# some code
+= f.association :salary_wage_type,
+              collection: wage_type_collection,
+              as: :select,
+              input_html: { \
+                            class: 'select2-input', \
+                            data: { \
+                              controller: 'salary--wage-type', \
+                              'data-selected-wage-type': selected_wage_type, \
+                              'salary--recurring-payslip-line-items--edit-target': 'wageType', \
+                              action: 'jquery:select2:select->salary--recurring-payslip-line-items--edit#setWageType', \
+                              'data-test-id': 'add-salary-item-id-sds' \
+                                } \
+                              },
+              label: I18n.t('activerecord.attributes.salary/recurring_payslip_line_item.salary_wage_type')
+
+# Description
+1. here we have my own variable: 'data-selected-wage-type': selected_wage_type.
+  (we can create a lot variables and they must be started from "data-...")
+2. which will be able inside controler as: this.wageTypeTarget.dataset.dataSelectedWageType
+3. also we inicialize yhis variable from ruby by method: selected_wage_type
+4. 'salary--recurring-payslip-line-items--edit-target': 'wageType' - that is target variable from stimulus
