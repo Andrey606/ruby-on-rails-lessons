@@ -197,3 +197,5 @@ It is exists but when we give form object with virtual property it will not be s
 # sorting
 # divide on two groups and sort inside each separately
 line_items.sort_by{ |line_item| [line_item.line_type, line_item.id] }.each do |line_item|
+
+# to setup system variables
