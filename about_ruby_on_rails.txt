@@ -4,6 +4,7 @@ rails commands
 
 # create new
 rails new <project_name>
+rails new your-green-factory
 
 rails webpacker:install
 
@@ -199,3 +200,22 @@ It is exists but when we give form object with virtual property it will not be s
 line_items.sort_by{ |line_item| [line_item.line_type, line_item.id] }.each do |line_item|
 
 # to setup system variables
+
+# controller attributes
+before_action
+skip_before_action
+
+# model attributes
+has_many 
+has_one
+belongs_to
+accepts_nested_attributes_for # позволяет создать обькт и сразу проинициилизировать и создать этот обькт
+attr_accessor # is used to define an attribute for object of Model which is not mapped with any column in database. This answers question - What is attr_accessor in Rails.
+
+# viev commands
+<%= fields_for( :payments ) %>
+
+# embed jsvascript into *.html.erb file
+<script language="Javacript">
+  ... js code ...
+</script>
