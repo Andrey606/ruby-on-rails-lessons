@@ -2,8 +2,11 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/my_projects/your-green-factory" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/my_projects/your-green-factory/your-green-factory" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/udemy/ruby_on_rails_5/message_me" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/udemy/ruby_on_rails_6/alpha-blog" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/udemy/ruby_on_rails_6/finance-tracker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/udemy/ruby_on_rails_6/photo-app" vcs="Git" />
   </component>
 </project>
