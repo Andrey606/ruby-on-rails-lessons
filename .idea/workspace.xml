@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4c12a3b-7688-4bc8-8393-34fa745eb29d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/udemy/ruby_on_rails_6/finance-tracker" beforeDir="false" afterPath="$PROJECT_DIR$/udemy/ruby_on_rails_6/finance-tracker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy/ruby_on_rails_6/finance-tracker/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/udemy/ruby_on_rails_6/finance-tracker/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy/ruby_on_rails_6/finance-tracker/app/views/users/_result.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/udemy/ruby_on_rails_6/finance-tracker/app/views/users/_result.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy/ruby_on_rails_6/photo-app/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/udemy/ruby_on_rails_6/photo-app/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy/ruby_on_rails_6/photo-app/app/views/devise/registrations/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/udemy/ruby_on_rails_6/photo-app/app/views/devise/registrations/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy/ruby_on_rails_6/photo-app/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/udemy/ruby_on_rails_6/photo-app/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy/ruby_on_rails_6/photo-app/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/udemy/ruby_on_rails_6/photo-app/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +14,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="21q8nN3K4WG1zfZfq5lZuXL6jGA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -27,6 +36,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="d4c12a3b-7688-4bc8-8393-34fa745eb29d" name="Changes" comment="" />
@@ -35,7 +45,11 @@
       <option name="presentableId" value="Default" />
       <updated>1638657422457</updated>
       <workItem from="1638657423554" duration="6000" />
+      <workItem from="1641576783745" duration="117000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
