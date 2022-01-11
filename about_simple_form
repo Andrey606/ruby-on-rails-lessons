@@ -1,0 +1,14 @@
+= f.input :enable_sale_invoices_round_cents,
+                as: :boolean,
+                label: I18n.t('activerecord.attributes.company.enable_rounding'),
+                input_html: { \
+                  'data-checkbox-content-flipper-target': :source,
+                  checked: !f.object.sale_round_cents.nil?,
+                  'data-action': 'checkbox-content-flipper#flipContent' \
+                }
+
+:enable_sale_invoices_round_cents - this is parametr in model which used to save value,
+also it can be method in the model 
+
+we can do not have this parametr or method in the medol if we have paremeter 'checked' in 'input_html',
+and now the start value of this checkbok depends from 'checked: !f.object.sale_round_cents.nil?'

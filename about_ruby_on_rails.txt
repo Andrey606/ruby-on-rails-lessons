@@ -203,6 +203,7 @@ line_items.sort_by{ |line_item| [line_item.line_type, line_item.id] }.each do |l
 
 # controller attributes
 before_action
+after_action
 skip_before_action
 
 # model attributes
