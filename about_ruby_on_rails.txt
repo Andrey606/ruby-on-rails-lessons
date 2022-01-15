@@ -25,6 +25,9 @@ rails generate channel  chatroom
 # CRUD generator (controller view model route)
 rails generate scaffold Article title:string description:text
 
+# CRUD generator
+rails generate scaffold Image name:string picture:string user:references
+
 # CRUD generator (model test)
 rails generate model user
 
@@ -212,6 +215,7 @@ has_one
 belongs_to
 accepts_nested_attributes_for # позволяет создать обькт и сразу проинициилизировать и создать этот обькт
 attr_accessor # is used to define an attribute for object of Model which is not mapped with any column in database. This answers question - What is attr_accessor in Rails.
+validate :<name of the method>
 
 # viev commands
 <%= fields_for( :payments ) %>
@@ -220,3 +224,7 @@ attr_accessor # is used to define an attribute for object of Model which is not 
 <script language="Javacript">
   ... js code ...
 </script>
+
+
+# Генерит default вьюхи для Images
+rails g bootstrap:themed Images
