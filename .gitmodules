@@ -13,3 +13,6 @@
 [submodule "my_projects/your-green-factory"]
 	path = my_projects/your-green-factory
 	url = https://github.com/Andrey606/your-green-factory.git
+[submodule "udemy/ruby_on_rails_6/saas-project-app"]
+	path = udemy/ruby_on_rails_6/saas-project-app
+	url = https://github.com/Andrey606/saas-project-app.git
