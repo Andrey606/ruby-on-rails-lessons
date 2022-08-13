@@ -1,0 +1,32 @@
+1) =================================================================
+gem 'twitter-bootstrap-rails'
+bundle install
+rails g bootstrap:install static
+	create  app/assets/javascripts/application.js
+      	create  app/assets/javascripts/bootstrap.js
+      	create  app/assets/stylesheets/bootstrap_and_overrides.css
+      	create  config/locales/en.bootstrap.yml
+        	gsub  app/assets/stylesheets/application.css	
+2) =================================================================
+gem 'devise-bootstrap-views'
+bundle install
+rails g devise:views:locale en
+	create  config/locales/devise.views.en.yml
+rails g devise:views:bootstrap_templates
+	create  app/views/devise
+      	create  app/views/devise/confirmations/new.html.erb
+      	create  app/views/devise/passwords/edit.html.erb
+      	create  app/views/devise/passwords/new.html.erb
+      	create  app/views/devise/registrations/edit.html.erb
+      	create  app/views/devise/registrations/new.html.erb
+      	create  app/views/devise/sessions/new.html.erb
+      	create  app/views/devise/shared/_links.html.erb
+      	create  app/views/devise/unlocks/new.html.erb
+Add '*= require devise_bootstrap_views' in app/assets/stylesheets/application.css
+rails g bootstrap:layout application 
+=> Y
+	force  app/views/layouts/application.html.erb
+# add flash to app/helpers/application_helper.rb
+Copy code from https://github.com/seyhunak/twitter-bootstrap-rails/blob/master/app/helpers/bootstrap_flash_helper.rb to application_helper.rb
+
+

@@ -24,3 +24,17 @@ add submodule:
 [submodule "udemy/ruby_on_rails_6/finance-tracker"]
 	path = udemy/ruby_on_rails_6/finance-tracker
 	url = https://github.com/Andrey606/finance-tracker.git
+
+# Отмена последнего коммита
+git reset HEAD~
+
+# commit in previos commit
+Git add "some file"
+git commit --amend --no-edit
+
+# to add ssh ==================================
+# generate ssh 
+ssh-keygen -t ed25519 -C "andreykuluev96@gmail.com"
+# in repo (add ssh to repo)
+eval "$(ssh-agent -s)"
+ssh-add <path to ssh key without extension>

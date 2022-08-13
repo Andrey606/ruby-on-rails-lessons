@@ -40,6 +40,7 @@ rails generate migration create_articles
 rails db:migrate
 rails db:rollback
 rails db:seed
+rake db:rollback STEP=5 
 
 # rails console
 rails console

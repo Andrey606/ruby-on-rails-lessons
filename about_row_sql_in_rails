@@ -1,0 +1,1 @@
+return unless model.bank_transactions.where('transaction_on > ?', closed_on.to_date).exists?

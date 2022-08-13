@@ -198,3 +198,14 @@ puts response.headers
 --------------------
 heroku config:set SENDGRID_USERNAME=apikey
 heroku config:set SENDGRID_API_KEY=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
+
+
+
+
+# Milia GEM =-====================
+
+gem 'devise'
+gem 'milia'
+
+2) clean all routes 
+3) rails g milia:install --org_email='do-not-reply@example.com'

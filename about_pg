@@ -1,0 +1,22 @@
+Setting Up Postgres
+Create a Postgres user for the Rails app we’ll create in the next step. To do this, switch into the Postgres user:
+
+$ su - postgres
+After that access Postgres:
+
+$ psql
+Then create a user (or a “role”, as Postgres calls it):
+
+$ create role myapp with createdb login password 'password1';
+
+
+PG commands:
+
+1. # To view a list of all the ROLE and USER groups for a Postgres server
+$ \du
+
+2. # create user/role
+$ create role word_list with createdb login password 'Lfqvyt100gbfcnhjd!';
+where: word_list - user_name, password: 'Lfqvyt100gbfcnhjd!'
+
+3. 
