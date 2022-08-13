@@ -1,13 +1,32 @@
-Setting Up Postgres
-Create a Postgres user for the Rails app we’ll create in the next step. To do this, switch into the Postgres user:
+0. # Create new app with PG db
 
 $ su - postgres
 After that access Postgres:
-
 $ psql
-Then create a user (or a “role”, as Postgres calls it):
 
+Then create a user (or a “role”, as Postgres calls it):
 $ create role myapp with createdb login password 'password1';
+$ rails new myapp --database=postgresql
+
+We will now configure which database Rails will talk to. This is done using the database.yml file, located at:
+RAILS_ROOT/config/database.yml
+
+Once configured, your database.yml should contain something like this:
+  development:
+    adapter: postgresql
+    encoding: unicode
+    database: myapp_development
+    pool: 5
+    username: myapp
+    password: password1
+
+  test:
+    adapter: postgresql
+    encoding: unicode
+    database: myapp_test
+    pool: 5
+    username: myapp
+    password: password1
 
 
 PG commands:
@@ -19,4 +38,21 @@ $ \du
 $ create role word_list with createdb login password 'Lfqvyt100gbfcnhjd!';
 where: word_list - user_name, password: 'Lfqvyt100gbfcnhjd!'
 
-3. 
+3. To create pg app
+$ rails new myapp --database=postgresql
+
+4. Show tables
+First, choose your database
+$ \c database_name
+
+Then, this shows all tables in the current schema:
+$ \dt
+or
+$ \dt+
+or
+$ SELECT * FROM pg_catalog.pg_tables WHERE schemaname != 'pg_catalog' AND schemaname != 'information_schema';
+
+5. Show all rows of the tables
+$ SELECT table_name FROM information_schema.tables WHERE table_schema = 'public' ORDER BY table_name;
+Example: 
+$ SELECT posts FROM information_schema.tables WHERE table_schema = 'public' ORDER BY posts;
